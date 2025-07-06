@@ -8,19 +8,17 @@
   <style>
     body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
     header { background-color: #004080; color: white; padding: 20px; text-align: center; }
-    nav { background-color: #0066cc; display: flex; justify-content: center; }
+    nav { background-color: #0066cc; display: flex; justify-content: center; flex-wrap: wrap; }
     nav a { color: white; padding: 14px 20px; text-decoration: none; display: block; }
     nav a:hover { background-color: #0055aa; }
-    .hero {
-        background: url('images/download.webp') no-repeat center center/cover; 
-        color: white; text-align: center; padding: 80px 20px;
-        margin-top: 5px;
-    }
+    .hero { background: url('images/download.webp') no-repeat center center/cover; color: white; text-align: center; padding: 80px 20px; }
     .hero h1 { font-size: 48px; }
     .hero p { font-size: 20px; }
     .section { padding: 40px 20px; text-align: center; }
     .features { display: flex; flex-wrap: wrap; justify-content: space-around; }
     .feature-box { width: 200px; margin: 10px; background: #f0f0f0; padding: 20px; border-radius: 10px; }
+    .gallery { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+    .gallery img { width: 250px; border-radius: 10px; }
     footer { background-color: #003366; color: white; text-align: center; padding: 20px; }
   </style>
 </head>
@@ -33,7 +31,9 @@
     <a href="#about">About Us</a>
     <a href="#academics">Academics</a>
     <a href="#achievements">Achievements</a>
+    <a href="#gallery">Gallery</a>
     <a href="#admissions">Admissions</a>
+    <a href="#login">Login</a>
     <a href="#contact">Contact</a>
   </nav>
 
@@ -69,6 +69,11 @@
     </div>
   </div>
 
+  <div class="section" id="academics">
+    <h2>Our Academic Programs</h2>
+    <p>We offer a robust curriculum from early years to high school with a focus on literacy, STEM, and creative arts.</p>
+  </div>
+
   <div class="section" id="achievements">
     <h2>Achievements</h2>
     <p>Science Fair Gold Medal - National Robotics Champion - Regional Debating Trophy</p>
@@ -82,10 +87,25 @@
     </p>
   </div>
 
+  <div class="section" id="gallery">
+    <h2>School Gallery</h2>
+    <div class="gallery">
+      <img src="images/classroom.jpg" alt="Classroom" />
+      <img src="images/lab.jpg" alt="Science Lab" />
+      <img src="images/sportfield.webp" alt="Sports Field" />
+      <img src="images/event.jpg" alt="School Event" />
+    </div>
+  </div>
+
   <div class="section" id="admissions">
     <h2>Admissions</h2>
     <p>Now accepting applications for 2025. Explore our online admission form, or visit the school for a tour.</p>
-    <button>Apply Online</button>
+    <button><a href="admission.html"> Apply Online</button>
+  </div>
+
+  <div class="section" id="login">
+    <h2>Parent & Student Login</h2>
+    <p><a href="#">Click here</a> to log in to the school portal for access to grades, announcements, and resources.</p>
   </div>
 
   <footer id="contact">
